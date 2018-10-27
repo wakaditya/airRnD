@@ -1,0 +1,138 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+	
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">	
+			<link rel="stylesheet" href="css/hexagons.min.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+		<body>	
+						
+
+			<!-- Start cat Area -->
+			<section class="cat-area section-gap aboutus-cat" id="feature">
+				<div class="container">							
+					<div class="row">
+						<div class="col-lg-2">	
+							<div class="single-cat d-flex flex-column">
+								<a href="#" class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-laptop-phone"></span></span></a>
+								<h4 class="mb-20" style="margin-top: 23px;">Wireless Internet</h4>
+								
+								
+							</div>															
+						</div>
+						<div class="col-lg-1">
+								<div class="single-cat">
+									<a href="#" class="hb-sm-margin mx-auto d-block"></a>
+									<h4 class="mt-40 mb-20"></h4>
+									<p>
+										+
+									</p>
+								</div>	
+														
+							</div>
+						
+						<div class="col-lg-2">	
+							<div class="single-cat">
+								<a href="#" class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-sun"></span></span></a>
+								<h4 class="mt-40 mb-20">Air Conditioning</h4>
+								
+							</div>															
+						</div>
+
+						<div class="col-lg-1">
+								<div class="single-cat">
+									<a href="#" class="hb-sm-margin mx-auto d-block"></a>
+									<h4 class="mt-40 mb-20"></h4>
+									<p>
+										+
+									</p>
+								</div>	
+														
+							</div>
+						<div class="col-lg-2">
+							<div class="single-cat">
+								<a href="#" class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-home"></span></span></a>
+								<h4 class="mt-40 mb-20">Swimming Pool</h4>
+								
+							</div>	
+													
+						</div>
+
+						<div class="col-lg-1">
+								<div class="single-cat">
+									<a href="#" class="hb-sm-margin mx-auto d-block"></a>
+									<h4 class="mt-40 mb-20"></h4>
+									<p>
+										=
+									</p>
+								</div>	
+														
+							</div>
+
+						<div class="col-lg-1">
+								<div class="single-cat">
+									<a href="#" class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-smile"></span></span></a>
+									<h4 class="mt-40 mb-20">Happy AirBnB'ers</h4>
+									
+								</div>	
+														
+							</div>
+					</div>
+
+					<canvas id="line-chart" width="600" height="250"></canvas>
+
+				
+				</div>	
+			</section>
+			<!-- End cat Area -->						
+
+		
+			<!-- End feedback Area -->
+				
+			
+
+			
+		</body>
+	</html>
+
+	<script>
+	new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: [2012,2013,2014,2015,2016,2017,2018],
+    datasets: [{ 
+        data: [86,114,106,106,107,111,133,221],
+        label: "With Amenities",
+        borderColor: "#3e95cd",
+        fill: false
+      }, { 
+        data: [282,350,411,502,635,809,810,820],
+        label: "Without the Amenities",
+        borderColor: "#8e5ea2",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Effect of Amenities on Positive Experience'
+    }
+  }
+});
+	</script>
+
+
+
